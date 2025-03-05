@@ -19,7 +19,7 @@ This ElizaOS plugin provides **“computer-use”** actions via multi-turn loop 
 
 ---
 
-## Installation (Local, Non-Docker)
+## Installation
 
 If you prefer to integrate the plugin into your local Eliza setup outside of Docker:
 
@@ -77,7 +77,7 @@ The repository includes a **Dockerfile** and scripts to spin up a fully self-con
    - The Dockerfile:
      - Installs dependencies (xvfb, xdotool, scrot, mutter, etc.)
      - Clones the Eliza repository, checks out `develop`
-     - Installs your plugin (this part is in `RUN pnpm install && pnpm build` steps)
+     - Installation and build steps (`RUN pnpm install && pnpm build`)
      - Copies scripts and config
 
 ### 3. Create and Customize `.env`
